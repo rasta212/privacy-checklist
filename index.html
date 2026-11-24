@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de privacidad y seguridad en línea</title>
+  <meta name="description" content="Checklist práctico de privacidad y seguridad en línea: cuentas, teléfono, navegador, VPN, correos y redes sociales.">
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #2563eb;
+      --done: #16a34a;
+      --border: #d9e2ec;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --accent: #60a5fa;
+        --done: #4ade80;
+        --border: #374151;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    header h1 { font-size: 1.7rem; margin: 0 0 8px; }
+    header p { color: var(--muted); margin: 0 0 16px; }
+    .progress-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+    .progress-text { font-weight: 600; margin-bottom: 8px; }
+    .progress-bar {
+      height: 10px;
+      background: var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--done);
+      transition: width 0.3s ease;
+    }
+    .reset {
+      margin-top: 12px;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.9rem;
+    }
+    .reset:hover { color: var(--text); }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+    section h2 { font-size: 1.15rem; margin: 0 0 12px; }
+    label {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 8px 0;
+      cursor: pointer;
+    }
+    label + label { border-top: 1px solid var(--border); }
+    input[type="checkbox"] {
+      margin-top: 4px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--done);
+      flex-shrink: 0;
+    }
+    label.checked span { color: var(--muted); text-decoration: line-through; }
+    footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Checklist de privacidad y seguridad en línea</h1>
+      <p>Marca lo que ya tienes configurado. Tu progreso se guarda en este navegador.</p>
+    </header>
+
+    <div class="progress-wrap">
+      <div class="progress-text" id="progress-text">0 de 0 completadas</div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <button class="reset" id="reset">Reiniciar checklist</button>
+    </div>
+
+    <div id="sections"></div>
+
+    <footer>
+      <p>Este material es orientativo. Los menús de las apps cambian con las actualizaciones.</p>
+      <p>Guías más detalladas: <a href="https://mysafeip.blogspot.com/">mysafeip.blogspot.com</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const data = [
+      {
+        title: "1. Cuentas y contraseñas",
+        items: [
+          "Tengo una contraseña distinta para cada servicio importante (correo, banco, redes sociales).",
+          "Uso un gestor de contraseñas para guardarlas.",
+          "Tengo activada la autenticación en dos pasos (2FA) en el correo principal.",
+          "Tengo activada la autenticación en dos pasos en mi cuenta bancaria y en mis redes sociales.",
+          "Prefiero una app de autenticación o una llave física antes que el SMS, cuando el servicio lo permite.",
+          "Reviso una vez al año qué sesiones y dispositivos tienen acceso a mis cuentas y cierro las que no reconozco.",
+          "Mi correo y mi teléfono de recuperación están actualizados."
+        ]
+      },
+      {
+        title: "2. Teléfono",
+        items: [
+          "El sistema operativo y las apps están actualizados.",
+          "Tengo un código o biometría para desbloquear el teléfono.",
+          "Reviso qué apps tienen acceso a mi ubicación y cambio a \"solo mientras uso la app\" cuando es posible.",
+          "Revisé los permisos de micrófono y cámara y quité los que no necesito.",
+          "Desactivé la conexión automática a redes Wi-Fi abiertas.",
+          "Desinstalé apps que ya no uso.",
+          "Tengo activada la función de buscar mi dispositivo.",
+          "Hice una copia de seguridad de mis datos importantes."
+        ]
+      },
+      {
+        title: "3. Navegador",
+        items: [
+          "El navegador está actualizado.",
+          "Bloqueo cookies de terceros o activo la protección contra rastreo.",
+          "Revisé las extensiones instaladas y elimino las que no reconozco o no uso.",
+          "Tengo activado el aviso antes de visitar sitios con certificados inválidos.",
+          "Guardo contraseñas solo en un gestor confiable."
+        ]
+      },
+      {
+        title: "4. Conexión y VPN",
+        items: [
+          "Mi router tiene la contraseña de administrador cambiada.",
+          "El firmware del router está actualizado.",
+          "La red Wi-Fi usa cifrado WPA2 o WPA3.",
+          "Si uso VPN, la elegí de un proveedor con una política de no registros verificada por terceros o auditorías.",
+          "Si uso VPN, probé la conexión con una herramienta de detección de fugas y comprobé DNS, WebRTC e IPv6.",
+          "Tengo activado el \"kill switch\" de la VPN si la app lo ofrece."
+        ]
+      },
+      {
+        title: "5. Correos, mensajes y llamadas",
+        items: [
+          "No hago clic en enlaces de mensajes que generan urgencia (\"tu cuenta será bloqueada hoy\").",
+          "Antes de entrar a un sitio desde un correo, escribo la dirección manualmente o uso un marcador guardado.",
+          "Verifico el remitente real, no solo el nombre que se muestra.",
+          "Nunca comparto códigos de verificación con nadie, aunque diga ser de mi banco o de la empresa.",
+          "Si recibo una llamada sospechosa, cuelgo y llamo yo al número oficial."
+        ]
+      },
+      {
+        title: "6. Redes sociales",
+        items: [
+          "Revisé quién puede ver mis publicaciones y mi información personal.",
+          "Desactivé la búsqueda por número de teléfono o correo, si la app la tiene.",
+          "Quité etiquetas en fotos que no quiero que aparezcan en mi perfil.",
+          "Reviso las aplicaciones y los sitios conectados a mi cuenta."
+        ]
+      },
+      {
+        title: "7. Hábitos generales",
+        items: [
+          "Evito conectarme a cuentas importantes desde computadoras públicas.",
+          "Uso un cargador propio o un adaptador de solo carga en lugares públicos.",
+          "Reviso qué información sobre mí aparece al buscar mi nombre.",
+          "Repaso este checklist cada tres meses."
+        ]
+      }
+    ];
+
+    const STORAGE_KEY = "privacy-checklist-state";
+    let saved = {};
+    try {
+      saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch (e) {
+      saved = {};
+    }
+
+    const container = document.getElementById("sections");
+    const allBoxes = [];
+
+    data.forEach((section, si) => {
+      const sec = document.createElement("section");
+      const h2 = document.createElement("h2");
+      h2.textContent = section.title;
+      sec.appendChild(h2);
+
+      section.items.forEach((text, ii) => {
+        const id = `${si}-${ii}`;
+        const label = document.createElement("label");
+        const box = document.createElement("input");
+        box.type = "checkbox";
+        box.dataset.id = id;
+        box.checked = !!saved[id];
+        const span = document.createElement("span");
+        span.textContent = text;
+        label.appendChild(box);
+        label.appendChild(span);
+        label.classList.toggle("checked", box.checked);
+        box.addEventListener("change", () => {
+          label.classList.toggle("checked", box.checked);
+          persist();
+          updateProgress();
+        });
+        allBoxes.push(box);
+        sec.appendChild(label);
+      });
+
+      container.appendChild(sec);
+    });
+
+    function persist() {
+      const state = {};
+      allBoxes.forEach(b => { if (b.checked) state[b.dataset.id] = true; });
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        /* el navegador puede bloquear el almacenamiento; el checklist sigue funcionando */
+      }
+    }
+
+    function updateProgress() {
+      const total = allBoxes.length;
+      const done = allBoxes.filter(b => b.checked).length;
+      const pct = total ? Math.round((done / total) * 100) : 0;
+      document.getElementById("progress-text").textContent =
+        `${done} de ${total} completadas (${pct}%)`;
+      document.getElementById("progress-fill").style.width = pct + "%";
+    }
+
+    document.getElementById("reset").addEventListener("click", () => {
+      if (!confirm("¿Quieres desmarcar todas las casillas?")) return;
+      allBoxes.forEach(b => {
+        b.checked = false;
+        b.closest("label").classList.remove("checked");
+      });
+      persist();
+      updateProgress();
+    });
+
+    updateProgress();
+  </script>
+</body>
+</html>
