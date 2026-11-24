@@ -1,67 +1,67 @@
-# Checklist de privacidad y seguridad en línea
+# Privacy & Online Security Checklist
 
-Marca cada casilla cuando la hayas revisado. Si una opción no existe en tu dispositivo, sáltala.
+Tick each box once you have checked it. If an option does not exist on your device, skip it.
 
-## 1. Cuentas y contraseñas
+## 1. Accounts and passwords
 
-- [ ] Tengo una contraseña distinta para cada servicio importante (correo, banco, redes sociales).
-- [ ] Uso un gestor de contraseñas para guardarlas.
-- [ ] Tengo activada la autenticación en dos pasos (2FA) en el correo principal.
-- [ ] Tengo activada la autenticación en dos pasos en mi cuenta bancaria y en mis redes sociales.
-- [ ] Prefiero una app de autenticación o una llave física antes que el SMS, cuando el servicio lo permite.
-- [ ] Reviso una vez al año qué sesiones y dispositivos tienen acceso a mis cuentas y cierro las que no reconozco.
-- [ ] Mi correo de recuperación y mi número de teléfono de recuperación están actualizados.
+- [ ] I use a different password for each important service (email, bank, social media).
+- [ ] I use a password manager to store them.
+- [ ] Two-factor authentication (2FA) is enabled on my main email account.
+- [ ] Two-factor authentication is enabled on my bank account and social media accounts.
+- [ ] I prefer an authenticator app or a physical security key over SMS, when the service allows it.
+- [ ] Once a year I review which sessions and devices have access to my accounts and sign out of any I do not recognise.
+- [ ] My recovery email and recovery phone number are up to date.
 
-## 2. Teléfono
+## 2. Phone
 
-- [ ] El sistema operativo y las apps están actualizados.
-- [ ] Tengo un código o biometría para desbloquear el teléfono.
-- [ ] Reviso qué apps tienen acceso a mi ubicación y cambio a "solo mientras uso la app" cuando es posible.
-- [ ] Revisé los permisos de micrófono y cámara y quité los que no necesito.
-- [ ] Desactivé la conexión automática a redes Wi-Fi abiertas.
-- [ ] Desinstalé apps que ya no uso.
-- [ ] Tengo activada la función de buscar mi dispositivo.
-- [ ] Hice una copia de seguridad de mis datos importantes.
+- [ ] The operating system and apps are up to date.
+- [ ] I use a passcode or biometrics to unlock my phone.
+- [ ] I review which apps can access my location and switch to "only while using the app" where possible.
+- [ ] I have reviewed microphone and camera permissions and removed the ones I do not need.
+- [ ] I have turned off automatic connection to open Wi-Fi networks.
+- [ ] I have uninstalled apps I no longer use.
+- [ ] "Find my device" is enabled.
+- [ ] I have backed up my important data.
 
-## 3. Navegador
+## 3. Browser
 
-- [ ] El navegador está actualizado.
-- [ ] Bloqueo cookies de terceros o activo la protección contra rastreo.
-- [ ] Revisé las extensiones instaladas y elimino las que no reconozco o no uso.
-- [ ] Tengo activado el aviso antes de visitar sitios con certificados inválidos.
-- [ ] Guardo contraseñas solo en un gestor confiable, no en cualquier sitio que lo ofrezca.
+- [ ] My browser is up to date.
+- [ ] I block third-party cookies or enable tracking protection.
+- [ ] I have reviewed my installed extensions and removed any I do not recognise or use.
+- [ ] I have enabled warnings before visiting sites with invalid certificates.
+- [ ] I store passwords only in a trusted password manager.
 
-## 4. Conexión y VPN
+## 4. Network and VPN
 
-- [ ] Mi router tiene la contraseña de administrador cambiada.
-- [ ] El firmware del router está actualizado.
-- [ ] La red Wi-Fi usa cifrado WPA2 o WPA3.
-- [ ] Si uso VPN, la elegí de un proveedor con una política de no registros verificada por terceros o auditorías.
-- [ ] Si uso VPN, probé la conexión con una herramienta de detección de fugas y comprobé DNS, WebRTC e IPv6.
-- [ ] Tengo activado el "kill switch" de la VPN si la app lo ofrece.
+- [ ] My router's admin password has been changed from the default.
+- [ ] My router's firmware is up to date.
+- [ ] My Wi-Fi network uses WPA2 or WPA3 encryption.
+- [ ] If I use a VPN, I chose a provider with a no-logs policy verified by a third party or independent audits.
+- [ ] If I use a VPN, I have tested the connection with a leak-detection tool and checked DNS, WebRTC, and IPv6.
+- [ ] I have enabled the VPN's "kill switch" if the app offers it.
 
-## 5. Correos, mensajes y llamadas
+## 5. Email, messages, and calls
 
-- [ ] No hago clic en enlaces de mensajes que generan urgencia ("tu cuenta será bloqueada hoy").
-- [ ] Antes de entrar a un sitio desde un correo, escribo la dirección manualmente o uso un marcador guardado.
-- [ ] Verifico el remitente real, no solo el nombre que se muestra.
-- [ ] Nunca comparto códigos de verificación con nadie, aunque la persona diga ser de mi banco o de la empresa.
-- [ ] Si recibo una llamada sospechosa, cuelgo y llamo yo al número oficial.
+- [ ] I do not click links in messages that create urgency ("your account will be locked today").
+- [ ] Before logging in to a site from an email, I type the address myself or use a saved bookmark.
+- [ ] I check the real sender address, not just the name shown.
+- [ ] I never share verification codes with anyone, even if they say they are from my bank or a company.
+- [ ] If I receive a suspicious call, I hang up and call the official number myself.
 
-## 6. Redes sociales
+## 6. Social media
 
-- [ ] Revisé quién puede ver mis publicaciones y mi información personal.
-- [ ] Desactivé la opción de búsqueda por número de teléfono o correo, si la app la tiene.
-- [ ] Quité etiquetas en fotos que no quiero que aparezcan en mi perfil.
-- [ ] Reviso las aplicaciones y los sitios conectados a mi cuenta.
+- [ ] I have reviewed who can see my posts and personal information.
+- [ ] I have turned off search by phone number or email, if the app allows it.
+- [ ] I have removed tags from photos I do not want on my profile.
+- [ ] I review the apps and websites connected to my account.
 
-## 7. Hábitos generales
+## 7. General habits
 
-- [ ] Evito conectarme a cuentas importantes desde computadoras públicas.
-- [ ] Uso un cargador propio o un adaptador de solo carga en lugares públicos.
-- [ ] Reviso mi huella digital en línea (qué información sobre mí aparece al buscar mi nombre).
-- [ ] Repaso este checklist cada tres meses.
+- [ ] I avoid logging in to important accounts on public computers.
+- [ ] I use my own charger or a charge-only adapter in public places.
+- [ ] I check what information about me appears when I search my name.
+- [ ] I review this checklist every three months.
 
-## Referencias
+## References
 
-Para explicaciones más detalladas sobre cada tema: https://mysafeip.blogspot.com/
+For more detailed explanations of each topic: https://mysafeip.blogspot.com/

@@ -1,22 +1,23 @@
-# Checklist de privacidad y seguridad en línea
+# Privacy & Online Security Checklist
 
-Un repositorio con una lista práctica de ajustes para proteger tu teléfono, tus cuentas y tu conexión a internet. Está pensado para revisarlo una vez al mes o cada vez que cambies de dispositivo.
+A practical checklist of settings to protect your phone, your accounts, and your internet connection. Review it once a month or whenever you get a new device.
 
-## Contenido
+## Contents
 
-- [CHECKLIST.md](CHECKLIST.md): lista completa de comprobaciones, con casillas para marcar.
-- [LICENSE](LICENSE): licencia MIT, que permite usar y compartir este material libremente.
+- [CHECKLIST.md](CHECKLIST.md): full list of checks, with boxes to tick off.
+- [index.html](index.html): interactive web version of the same checklist. Progress is saved in your browser.
+- [LICENSE](LICENSE): MIT license, which allows you to use and share this material freely.
 
-## Cómo usarlo
+## How to use it
 
-1. Abre `CHECKLIST.md` y recorre cada sección.
-2. Marca las casillas (`- [x]`) de lo que ya tienes configurado.
-3. Revisa lo que quede pendiente y ajústalo según tus necesidades.
+1. Open `CHECKLIST.md` (or `index.html` in a browser) and go through each section.
+2. Tick the items you already have set up (`- [x]` in the Markdown version).
+3. Review what is left and adjust it to your needs.
 
-## Referencias
+## References
 
-Para explicaciones más detalladas sobre estos temas, puedes consultar guías en https://mysafeip.blogspot.com/
+For more detailed explanations of these topics, see https://mysafeip.blogspot.com/
 
-## Aviso
+## Disclaimer
 
-Este material es orientativo. Los menús de los sistemas y las aplicaciones cambian con las actualizaciones, así que los nombres exactos de las opciones pueden variar.
+This material is for guidance only. System and app menus change with updates, so the exact names of options may vary.
